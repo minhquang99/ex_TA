@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,700&display=swap');
 
-/* ------------------------------  BASE  --------------------------------------- */
+/* ------------------------------  BASE  ----------------------------------- */
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
   }
- /* ------------------------------ SECTION 1--------------------------------------- */
+ /* ------------------------------ SECTION 1--------------------------------- */
   .marvel-logo img {
     height: 50px;
     width: auto;
@@ -116,7 +116,7 @@
       opacity: 0;
     }
   }
-   /* ------------------------------ SECTION 2 --------------------------------------- */
+   /* -------------------------- SECTION 2 -------------------------------- */
    .section2-title {
      color: white;
      font-size: 30px;
@@ -153,8 +153,6 @@
    .vid video {
      height: 90px;
      width: 100%;
-
-     margin-left: 10px;
    } 
    
    .slider .arrow-prev {
@@ -176,9 +174,9 @@
      right: -30px;
      cursor: pointer;
    }
-  /* ------------------------------ SECTION 3--------------------------------------- */
+  /* ---------------------------- SECTION 3-------------------------------- */
   .topp {
-    width: 100%;
+    width: 120%;
     height: 20px;
     z-index: 100;
   }
@@ -200,7 +198,9 @@
     height: auto;
   }
 
-  #sec-1, #sec-2, #sec-3 {
+  #sec-1, #sec-2, #sec-3, #sec-4 {
+    height: 100vh;
+    overflow: hidden;
     background-image: url('./assets/images/bg.jpg');
     background-size: cover;
     background-position: center center;
@@ -208,91 +208,51 @@
   
 /* --------------- LEFT 2 ----------------- */
 .to-left-2 {
-  opacity: 0.2;
+  opacity: 0;
   transform: translate(455px,-320px);
-  transition: all 5s ease;
 }
 
-.to-left-2.show {
-  opacity: 1;
-    transform: translate(250px,-190px);
-}
-
-.to-left-2.hide {
-  opacity: 0.2;
-    transform: translate(455px,-320px);
-}
 
 /* --------------- LEFT 1 ----------------- */
 .to-left-1 {
-  opacity: 0.2;
+  opacity: 0;
   transform: translate(250px,-310px);
-  transition: all 5s ease;
-}
-
-.to-left-1.show {
-  opacity: 1;
-    transform: translate(86px,-89px);
-}
-
-.to-left-1.hide {
-  opacity: 0.2;
-    transform: translate(250px,-310px);
 }
 
 /* --------------- MID ----------------- */
 .to-bot {
-  opacity: 0.2;
+  opacity: 0;
   transform: translateY(-330px);
-}
-
-.to-bot.show {
-  transform: translateY(-30px);
-  opacity: 1;
-  transition: all 5s ease;
-}
-
-.to-bot.hide {
-  transform: translateY(-330px);
-  opacity: 0.1;
-  transition: all 5s ease;
 }
 
 /* --------------- RIGHT 1 ----------------- */
 .to-right-1 {
-  opacity: 0.2;
+  opacity: 0;
   transform: translate(-240px,-300px);
-  transition: all 5s ease;
-}
-
-.to-right-1.show {
-  opacity: 1;
-    transform: translate(-75px,-90px);
-}
-
-.to-right-1.hide {
-  opacity: 0.2;
-    transform: translate(-240px,-300px);
 }
 
 /* --------------- RIGHT 2 ----------------- */
 .to-right-2 {
-  opacity: 0.2;
+  opacity: 0;
   transform: translate(-485px,-325px);
-  transition: all 5s ease;
-}
-
-.to-right-2.show {
-  opacity: 1;
-    transform: translate(-230px,-180px);
-}
-
-.to-right-2.hide {
-  opacity: 0.2;
-    transform: translate(-485px,-325px);
 }
 
 
+ /* ---------------------------- SECTION 4 -------------------------------- */
+.list-card {
+  width: 1000px;
+  height: 100%;
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-card img {
+  height: 150px;
+  width: 180px;
+
+  margin: 10px;
+}
 
 
